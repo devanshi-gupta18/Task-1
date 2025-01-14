@@ -1,0 +1,33 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+class student{
+    public:
+    string name;
+    int rollNumber;
+    string course;
+    int age;
+
+    student(string name, int rollNumber, string course, int age){
+        this->name=name;
+        this->rollNumber=rollNumber;
+        this->course=course;
+        this->age=age;
+    } 
+
+    void print(){
+        cout<<name<<" "<<rollNumber<<" " <<course<<" "<<age<<endl;
+    }
+};
+
+int main(){
+    student s1("devanshi", 10, "BTECH", 21);
+    student s2("priya", 11, "BSC", 20);
+    student s3("anu", 12, "BA", 22);
+
+    s1.print();
+    s2.print();
+    s3.print();
+
+    return 0;
+}
